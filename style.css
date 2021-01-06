@@ -1,0 +1,67 @@
+*{
+	background: #2f2f2f;
+	color: #f6f6f6;
+}
+.box{
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	background-image: url(https://i.pinimg.com/474x/83/9a/01/839a01392cd963f0824110edbb423ef2.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	filter: saturate(2);
+}
+
+.box::after{
+	display: block;
+	content: "Polaroid";
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: #daa7a762;
+	position: relative;
+	top: -50px;
+	left: 0px;
+}
+
+
+.box__item{
+	background: salmon;
+	width: 400px;
+	height: 400px;
+	clip-path: inset(20px 20px 50px);
+	filter: none;
+	transition: 1s;
+}
+
+.box__item:active{
+	clip-path: inset(20px 20px 98%);
+	background: salmon;
+	transition: 10s;
+}
+
+ .box__item::after{
+	display: block;
+	content: "^^^^";
+	font-size: 40px;
+	text-align: center;
+	background-color: lightgrey;
+	color: salmon;
+	position: relative;
+	top: 320px;
+	left: 0px;
+	cursor: pointer;
+} 
+
+
+
+
+
+
+
+
+
+
